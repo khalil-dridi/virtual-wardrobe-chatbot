@@ -1,0 +1,1001 @@
+{
+  "data": [
+    {
+      "tag": "bonjour",
+      "patterns": [
+        "Bonjour !",
+        "Salut !",
+        "Coucou !",
+        "Hello !",
+        "Hey !"
+      ],
+      "responses": [
+        "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "Salut ! Bienvenue ! En quoi puis-je vous assister ?",
+        "Coucou ! Ravie de vous voir ici ! Que puis-je faire pour vous ?",
+        "Hello ! Comment allez-vous ?",
+        "Hey ! Content de vous avoir parmi nous ! Comment puis-je vous aider ?"
+      ]
+    },
+    {
+      "tag": "au_revoir",
+      "patterns": [
+        "Au revoir !",
+        "À bientôt !",
+        "À la prochaine !",
+        "À plus tard !",
+        "Ciao !"
+      ],
+      "responses": [
+        "Au revoir ! N'hésitez pas à revenir si vous avez besoin d'autres conseils.",
+        "À bientôt ! Prenez soin de vous.",
+        "À la prochaine ! Passez une excellente journée.",
+        "À plus tard ! Merci d'avoir discuté avec moi.",
+        "Ciao ! J'espère vous revoir bientôt."
+      ]
+    },
+    {
+      "tag": "recommandation_couleurs_vetements_1",
+      "patterns": [
+        "Est-ce que le bleu va bien avec le vert ?",
+        "Puis-je porter un pantalon vert avec un pull bleu ?",
+        "Le vert et le bleu vont-ils bien ensemble ?",
+        "Le vert et le bleu sont-ils une bonne combinaison ?",
+        "Est-ce que le vert peut être porté avec du bleu ?"
+      ],
+      "responses": [
+        "Oui, le bleu et le vert vont très bien ensemble. C'est une combinaison rafraîchissante et harmonieuse."
+      ]
+    },
+    {
+      "tag": "recommandation_couleurs_vetements_2",
+      "patterns": [
+        "Est-ce que le rouge va bien avec le vert ?",
+        "Puis-je porter un pantalon vert avec un pull rouge ?",
+        "Le vert et le rouge vont-ils bien ensemble ?",
+        "Le vert et le rouge sont-ils une bonne combinaison ?",
+        "Est-ce que le vert peut être porté avec du rouge ?"
+      ],
+      "responses": [
+        "Oui, le vert et le rouge forment une combinaison audacieuse et dynamique. C'est un choix de couleur saisissant."
+      ]
+    },
+    {
+      "tag": "recommandation_couleurs_vetements_3",
+      "patterns": [
+        "Est-ce que le jaune va bien avec le vert ?",
+        "Puis-je porter un pantalon vert avec un haut jaune ?",
+        "Le vert et le jaune vont-ils bien ensemble ?",
+        "Le vert et le jaune sont-ils une bonne combinaison ?",
+        "Est-ce que le vert peut être porté avec du jaune ?"
+      ],
+      "responses": [
+        "Non, le vert et le jaune ne sont pas une bonne combinaison. Je vous recommande de choisir une autre couleur."
+      ]
+    },
+    {
+      "tag": "recommandation_couleurs_vetements_4",
+      "patterns": [
+        "Est-ce que le violet va bien avec le vert ?",
+        "Puis-je porter un pantalon vert avec un haut violet ?",
+        "Le vert et le violet vont-ils bien ensemble ?",
+        "Le vert et le violet sont-ils une bonne combinaison ?",
+        "Est-ce que le vert peut être porté avec du violet ?"
+      ],
+      "responses": [
+        "Oui, le vert et le violet peuvent créer un look vibrant et élégant. C'est une combinaison de couleurs sophistiquée."
+      ]
+    },
+    {
+        "tag": "recommandation_couleurs_vetements_5",
+        "patterns": [
+          "Est-ce que le noir va bien avec le vert ?",
+          "Puis-je porter un pantalon vert avec un haut noir ?",
+          "Le vert et le noir vont-ils bien ensemble ?",
+          "Le vert et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le vert peut être porté avec du noir ?"
+        ],
+        "responses": ["Oui, le vert et le noir forment une combinaison élégante et polyvalente. C'est un choix de couleur classique."]
+    },
+    {
+        "tag": "recommandation_couleurs_vetements_6",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le vert ?",
+          "Puis-je porter un pantalon vert avec un haut orange ?",
+          "Le vert et l'orange vont-ils bien ensemble ?",
+          "Le vert et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le vert peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Oui, le vert et l'orange créent une combinaison lumineuse et éclatante. C'est parfait pour un look dynamique et audacieux."]
+    },
+    {
+        "tag": "recommandation_couleurs_vetements_8",
+        "patterns": [
+          "Est-ce que le bleu va bien avec le noir ?",
+          "Puis-je porter un pantalon noir avec un pull bleu ?",
+          "Le noir et le bleu vont-ils bien ensemble ?",
+          "Le noir et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le noir peut être porté avec du bleu ?"
+        ],
+        "responses": ["Oui, le bleu et le noir forment une combinaison chic et élégante. C'est une option de couleur classique et intemporelle."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_9",
+        "patterns": [
+          "Est-ce que le rouge va bien avec le noir ?",
+          "Puis-je porter un pantalon noir avec un pull rouge ?",
+          "Le noir et le rouge vont-ils bien ensemble ?",
+          "Le noir et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le noir peut être porté avec du rouge ?"
+        ],
+        "responses": ["Oui, le noir et le rouge créent une combinaison audacieuse et passionnée. C'est un choix de couleur saisissant et élégant."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_12",
+        "patterns": [
+          "Est-ce que le vert va bien avec le noir ?",
+          "Puis-je porter un pantalon noir avec un haut vert ?",
+          "Le noir et le vert vont-ils bien ensemble ?",
+          "Le noir et le vert sont-ils une bonne combinaison ?",
+          "Est-ce que le noir peut être porté avec du vert ?"
+        ],
+        "responses": ["Oui, le noir et le vert créent une combinaison élégante et raffinée. C'est un choix de couleur chic et intemporel."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_14",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le noir ?",
+          "Puis-je porter un pantalon noir avec un haut blanc ?",
+          "Le noir et le blanc vont-ils bien ensemble ?",
+          "Le noir et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que le noir peut être porté avec du blanc ?"
+        ],
+        "responses": ["Oui, le noir et le blanc créent une combinaison classique et élégante. C'est une option de couleur polyvalente et intemporelle."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_15",
+        "patterns": [
+          "Est-ce que le gris va bien avec le noir ?",
+          "Puis-je porter un pantalon noir avec un haut gris ?",
+          "Le noir et le gris vont-ils bien ensemble ?",
+          "Le noir et le gris sont-ils une bonne combinaison ?",
+          "Est-ce que le noir peut être porté avec du gris ?"
+        ],
+        "responses": ["Oui, le noir et le gris forment une combinaison élégante et sophistiquée. C'est un choix de couleur subtil et raffiné."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_16",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le bleu ?",
+          "Puis-je porter un haut blanc avec un pantalon bleu ?",
+          "Le blanc et le bleu vont-ils bien ensemble ?",
+          "Le blanc et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du bleu ?"
+        ],
+        "responses": ["Le blanc et le bleu créent une combinaison rafraîchissante et élégante, parfaite pour une apparence estivale ou décontractée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_17",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le rouge ?",
+          "Puis-je porter un haut blanc avec un pantalon rouge ?",
+          "Le blanc et le rouge vont-ils bien ensemble ?",
+          "Le blanc et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du rouge ?"
+        ],
+        "responses": ["Le blanc et le rouge forment une combinaison classique et vibrante, idéale pour une tenue audacieuse et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_18",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le jaune ?",
+          "Puis-je porter un haut blanc avec un pantalon jaune ?",
+          "Le blanc et le jaune vont-ils bien ensemble ?",
+          "Le blanc et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du jaune ?"
+        ],
+        "responses": ["Le blanc et le jaune créent une combinaison lumineuse et ensoleillée, parfaite pour une tenue estivale fraîche et éclatante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_19",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le violet ?",
+          "Puis-je porter un haut blanc avec un pantalon violet ?",
+          "Le blanc et le violet vont-ils bien ensemble ?",
+          "Le blanc et le violet sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du violet ?"
+        ],
+        "responses": ["Le blanc et le violet créent une combinaison élégante et sophistiquée, parfaite pour une tenue chic et moderne."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_20",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le vert ?",
+          "Puis-je porter un haut blanc avec un pantalon vert ?",
+          "Le blanc et le vert vont-ils bien ensemble ?",
+          "Le blanc et le vert sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du vert ?"
+        ],
+        "responses": ["Le blanc et le vert créent une combinaison fraîche et naturelle, parfaite pour une tenue printanière ou estivale décontractée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_21",
+        "patterns": [
+          "Est-ce que le blanc va bien avec l'orange ?",
+          "Puis-je porter un haut blanc avec un pantalon orange ?",
+          "Le blanc et l'orange vont-ils bien ensemble ?",
+          "Le blanc et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Le blanc et l'orange créent une combinaison vive et énergique, parfaite pour une tenue estivale lumineuse et éclatante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_22",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le gris ?",
+          "Puis-je porter un haut blanc avec un pantalon gris ?",
+          "Le blanc et le gris vont-ils bien ensemble ?",
+          "Le blanc et le gris sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du gris ?"
+        ],
+        "responses": ["Le blanc et le gris créent une combinaison sobre et élégante, parfaite pour une tenue chic et polyvalente."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_23",
+        "patterns": [
+          "Est-ce que le blanc va bien avec le noir ?",
+          "Puis-je porter un haut blanc avec un pantalon noir ?",
+          "Le blanc et le noir vont-ils bien ensemble ?",
+          "Le blanc et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le blanc peut être porté avec du noir ?"
+        ],
+        "responses": ["Le blanc et le noir créent une combinaison classique et intemporelle, parfaite pour une tenue élégante et sophistiquée."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_24",
+        "patterns": [
+          "Est-ce que le beige va bien avec le bleu ?",
+          "Puis-je porter un haut beige avec un pantalon bleu ?",
+          "Le beige et le bleu vont-ils bien ensemble ?",
+          "Le beige et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du bleu ?"
+        ],
+        "responses": "Le beige et le bleu créent une combinaison douce et apaisante, parfaite pour une tenue décontractée et confortable."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_25",
+        "patterns": [
+          "Est-ce que le beige va bien avec le rouge ?",
+          "Puis-je porter un haut beige avec un pantalon rouge ?",
+          "Le beige et le rouge vont-ils bien ensemble ?",
+          "Le beige et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du rouge ?"
+        ],
+        "responses": "Le beige et le rouge forment une combinaison chaleureuse et élégante, idéale pour une tenue sophistiquée et accrocheuse."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_26",
+        "patterns": [
+          "Est-ce que le beige va bien avec le jaune ?",
+          "Puis-je porter un haut beige avec un pantalon jaune ?",
+          "Le beige et le jaune vont-ils bien ensemble ?",
+          "Le beige et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du jaune ?"
+        ],
+        "responses": "Le beige et le jaune créent une combinaison lumineuse et harmonieuse, parfaite pour une tenue estivale douce et ensoleillée."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_27",
+        "patterns": [
+          "Est-ce que le beige va bien avec le violet ?",
+          "Puis-je porter un haut beige avec un pantalon violet ?",
+          "Le beige et le violet vont-ils bien ensemble ?",
+          "Le beige et le violet sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du violet ?"
+        ],
+        "responses": "Le beige et le violet créent une combinaison délicate et sophistiquée, parfaite pour une tenue féminine et élégante."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_28",
+        "patterns": [
+          "Est-ce que le beige va bien avec le vert ?",
+          "Puis-je porter un haut beige avec un pantalon vert ?",
+          "Le beige et le vert vont-ils bien ensemble ?",
+          "Le beige et le vert sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du vert ?"
+        ],
+        "responses": "Le beige et le vert créent une combinaison naturelle et apaisante, parfaite pour une tenue décontractée et harmonieuse."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_29",
+        "patterns": [
+          "Est-ce que le beige va bien avec l'orange ?",
+          "Puis-je porter un haut beige avec un pantalon orange ?",
+          "Le beige et l'orange vont-ils bien ensemble ?",
+          "Le beige et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec de l'orange ?"
+        ],
+        "responses": "Le beige et l'orange forment une combinaison chaleureuse et lumineuse, parfaite pour une tenue estivale vibrante et éclatante."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_30",
+        "patterns": [
+          "Est-ce que le beige va bien avec le gris ?",
+          "Puis-je porter un haut beige avec un pantalon gris ?",
+          "Le beige et le gris vont-ils bien ensemble ?",
+          "Le beige et le gris sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du gris ?"
+        ],
+        "responses": "Le beige et le gris créent une combinaison élégante et subtile, parfaite pour une tenue décontractée et sophistiquée."
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_31",
+        "patterns": [
+          "Est-ce que le beige va bien avec le noir ?",
+          "Puis-je porter un haut beige avec un pantalon noir ?",
+          "Le beige et le noir vont-ils bien ensemble ?",
+          "Le beige et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le beige peut être porté avec du noir ?"
+        ],
+        "responses": "Le beige et le noir forment une combinaison élégante et polyvalente, idéale pour une tenue chic et intemporelle."
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_32",
+        "patterns": [
+          "Est-ce que le rose va bien avec le blanc ?",
+          "Puis-je porter un haut rose avec un pantalon blanc ?",
+          "Le rose et le blanc vont-ils bien ensemble ?",
+          "Le rose et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du blanc ?"
+        ],
+        "responses": ["Le rose et le blanc créent une combinaison douce et élégante, idéale pour une tenue féminine et rafraîchissante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_33",
+        "patterns": [
+          "Est-ce que le rose va bien avec le noir ?",
+          "Puis-je porter un haut rose avec un pantalon noir ?",
+          "Le rose et le noir vont-ils bien ensemble ?",
+          "Le rose et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du noir ?"
+        ],
+        "responses": ["Le rose et le noir forment une combinaison chic et audacieuse, parfaite pour une tenue élégante et sophistiquée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_34",
+        "patterns": [
+          "Est-ce que le rose va bien avec le bleu ?",
+          "Puis-je porter un haut rose avec un pantalon bleu ?",
+          "Le rose et le bleu vont-ils bien ensemble ?",
+          "Le rose et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du bleu ?"
+        ],
+        "responses": ["Le rose et le bleu créent une combinaison douce et romantique, parfaite pour une tenue délicate et féminine."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_35",
+        "patterns": [
+          "Est-ce que le rose va bien avec le rouge ?",
+          "Puis-je porter un haut rose avec un pantalon rouge ?",
+          "Le rose et le rouge vont-ils bien ensemble ?",
+          "Le rose et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du rouge ?"
+        ],
+        "responses": ["Le rose et le rouge forment une combinaison vibrante et passionnée, idéale pour une tenue audacieuse et séduisante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_36",
+        "patterns": [
+          "Est-ce que le rose va bien avec le violet ?",
+          "Puis-je porter un haut rose avec un pantalon violet ?",
+          "Le rose et le violet vont-ils bien ensemble ?",
+          "Le rose et le violet sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du violet ?"
+        ],
+        "responses": ["Le rose et le violet créent une combinaison délicate et sophistiquée, parfaite pour une tenue féminine et élégante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_37",
+        "patterns": [
+          "Est-ce que le rose va bien avec le jaune ?",
+          "Puis-je porter un haut rose avec un pantalon jaune ?",
+          "Le rose et le jaune vont-ils bien ensemble ?",
+          "Le rose et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du jaune ?"
+        ],
+        "responses": ["Le rose et le jaune forment une combinaison lumineuse et gaie, idéale pour une tenue estivale pleine de vitalité et d'énergie."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_38",
+        "patterns": [
+          "Est-ce que le rose va bien avec le vert ?",
+          "Puis-je porter un haut rose avec un pantalon vert ?",
+          "Le rose et le vert vont-ils bien ensemble ?",
+          "Le rose et le vert sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du vert ?"
+        ],
+        "responses": ["Le rose et le vert créent une combinaison fraîche et printanière, idéale pour une tenue légère et naturelle."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_39",
+        "patterns": [
+          "Est-ce que le rose va bien avec l'orange ?",
+          "Puis-je porter un haut rose avec un pantalon orange ?",
+          "Le rose et l'orange vont-ils bien ensemble ?",
+          "Le rose et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Le rose et l'orange forment une combinaison vive et éclatante, parfaite pour une tenue estivale ensoleillée et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_40",
+        "patterns": [
+          "Est-ce que le rose va bien avec le gris ?",
+          "Puis-je porter un haut rose avec un pantalon gris ?",
+          "Le rose et le gris vont-ils bien ensemble ?",
+          "Le rose et le gris sont-ils une bonne combinaison ?",
+          "Est-ce que le rose peut être porté avec du gris ?"
+        ],
+        "responses": ["Le rose et le gris créent une combinaison délicate et élégante, idéale pour une tenue sophistiquée et moderne."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_41",
+        "patterns": [
+          "Est-ce que le gris va bien avec le blanc ?",
+          "Puis-je porter un haut gris avec un pantalon blanc ?",
+          "Le gris et le blanc vont-ils bien ensemble ?",
+          "Le gris et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du blanc ?"
+        ],
+        "responses": ["Le gris et le blanc forment une combinaison classique et intemporelle, parfaite pour une tenue élégante et épurée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_42",
+        "patterns": [
+          "Est-ce que le gris va bien avec le noir ?",
+          "Puis-je porter un haut gris avec un pantalon noir ?",
+          "Le gris et le noir vont-ils bien ensemble ?",
+          "Le gris et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du noir ?"
+        ],
+        "responses": ["Le gris et le noir créent une combinaison élégante et sobre, idéale pour une tenue chic et sophistiquée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_43",
+        "patterns": [
+          "Est-ce que le gris va bien avec le bleu ?",
+          "Puis-je porter un haut gris avec un pantalon bleu ?",
+          "Le gris et le bleu vont-ils bien ensemble ?",
+          "Le gris et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du bleu ?"
+        ],
+        "responses": ["Le gris et le bleu créent une combinaison élégante et apaisante, parfaite pour une tenue décontractée et sophistiquée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_44",
+        "patterns": [
+          "Est-ce que le gris va bien avec le rouge ?",
+          "Puis-je porter un haut gris avec un pantalon rouge ?",
+          "Le gris et le rouge vont-ils bien ensemble ?",
+          "Le gris et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du rouge ?"
+        ],
+        "responses": ["Le gris et le rouge forment une combinaison audacieuse et dynamique, idéale pour une tenue moderne et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_45",
+        "patterns": [
+          "Est-ce que le gris va bien avec le violet ?",
+          "Puis-je porter un haut gris avec un pantalon violet ?",
+          "Le gris et le violet vont-ils bien ensemble ?",
+          "Le gris et le violet sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du violet ?"
+        ],
+        "responses": ["Le gris et le violet créent une combinaison chic et sophistiquée, parfaite pour une tenue élégante et raffinée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_46",
+        "patterns": [
+          "Est-ce que le gris va bien avec le jaune ?",
+          "Puis-je porter un haut gris avec un pantalon jaune ?",
+          "Le gris et le jaune vont-ils bien ensemble ?",
+          "Le gris et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du jaune ?"
+        ],
+        "responses": ["Le gris et le jaune forment une combinaison lumineuse et énergisante, idéale pour une tenue décontractée et estivale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_47",
+        "patterns": [
+          "Est-ce que le gris va bien avec le vert ?",
+          "Puis-je porter un haut gris avec un pantalon vert ?",
+          "Le gris et le vert vont-ils bien ensemble ?",
+          "Le gris et le vert sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du vert ?"
+        ],
+        "responses": ["Le gris et le vert créent une combinaison naturelle et apaisante, parfaite pour une tenue décontractée et élégante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_48",
+        "patterns": [
+          "Est-ce que le gris va bien avec l'orange ?",
+          "Puis-je porter un haut gris avec un pantalon orange ?",
+          "Le gris et l'orange vont-ils bien ensemble ?",
+          "Le gris et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Le gris et l'orange forment une combinaison audacieuse et dynamique, idéale pour une tenue moderne et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_49",
+        "patterns": [
+          "Est-ce que le gris va bien avec le rose ?",
+          "Puis-je porter un haut gris avec un pantalon rose ?",
+          "Le gris et le rose vont-ils bien ensemble ?",
+          "Le gris et le rose sont-ils une bonne combinaison ?",
+          "Est-ce que le gris peut être porté avec du rose ?"
+        ],
+        "responses": ["Le gris et le rose créent une combinaison douce et élégante, parfaite pour une tenue féminine et sophistiquée."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_50",
+        "patterns": [
+          "Est-ce que le violet va bien avec le blanc ?",
+          "Puis-je porter un haut violet avec un pantalon blanc ?",
+          "Le violet et le blanc vont-ils bien ensemble ?",
+          "Le violet et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du blanc ?"
+        ],
+        "responses": ["Le violet et le blanc créent une combinaison élégante et contrastée, parfaite pour une tenue estivale et rafraîchissante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_51",
+        "patterns": [
+          "Est-ce que le violet va bien avec le noir ?",
+          "Puis-je porter un haut violet avec un pantalon noir ?",
+          "Le violet et le noir vont-ils bien ensemble ?",
+          "Le violet et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du noir ?"
+        ],
+        "responses": ["Le violet et le noir forment une combinaison élégante et sophistiquée, parfaite pour une tenue chic et glamour."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_52",
+        "patterns": [
+          "Est-ce que le violet va bien avec le bleu ?",
+          "Puis-je porter un haut violet avec un pantalon bleu ?",
+          "Le violet et le bleu vont-ils bien ensemble ?",
+          "Le violet et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du bleu ?"
+        ],
+        "responses": ["Le violet et le bleu créent une combinaison harmonieuse et apaisante, parfaite pour une tenue décontractée et élégante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_53",
+        "patterns": [
+          "Est-ce que le violet va bien avec le rouge ?",
+          "Puis-je porter un haut violet avec un pantalon rouge ?",
+          "Le violet et le rouge vont-ils bien ensemble ?",
+          "Le violet et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du rouge ?"
+        ],
+        "responses": ["Le violet et le rouge forment une combinaison audacieuse et passionnée, idéale pour une tenue originale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_55",
+        "patterns": [
+          "Est-ce que le violet va bien avec le jaune ?",
+          "Puis-je porter un haut violet avec un pantalon jaune ?",
+          "Le violet et le jaune vont-ils bien ensemble ?",
+          "Le violet et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du jaune ?"
+        ],
+        "responses": ["Le violet et le jaune forment une combinaison lumineuse et dynamique, parfaite pour une tenue estivale et énergique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_56",
+        "patterns": [
+          "Est-ce que le violet va bien avec l'orange ?",
+          "Puis-je porter un haut violet avec un pantalon orange ?",
+          "Le violet et l'orange vont-ils bien ensemble ?",
+          "Le violet et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Le violet et l'orange créent une combinaison audacieuse et exotique, parfaite pour une tenue estivale et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_57",
+        "patterns": [
+          "Est-ce que le violet va bien avec le rose ?",
+          "Puis-je porter un haut violet avec un pantalon rose ?",
+          "Le violet et le rose vont-ils bien ensemble ?",
+          "Le violet et le rose sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du rose ?"
+        ],
+        "responses": ["Le violet et le rose créent une combinaison douce et romantique, parfaite pour une tenue féminine et élégante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_58",
+        "patterns": [
+          "Est-ce que le violet va bien avec le beige ?",
+          "Puis-je porter un haut violet avec un pantalon beige ?",
+          "Le violet et le beige vont-ils bien ensemble ?",
+          "Le violet et le beige sont-ils une bonne combinaison ?",
+          "Est-ce que le violet peut être porté avec du beige ?"
+        ],
+        "responses": ["Le violet et le beige créent une combinaison élégante et intemporelle, parfaite pour une tenue décontractée et sophistiquée."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_59",
+        "patterns": [
+          "Est-ce que le marron va bien avec le blanc ?",
+          "Puis-je porter un haut marron avec un pantalon blanc ?",
+          "Le marron et le blanc vont-ils bien ensemble ?",
+          "Le marron et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du blanc ?"
+        ],
+        "responses": ["Le marron et le blanc créent une combinaison naturelle et élégante, parfaite pour une tenue décontractée et raffinée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_60",
+        "patterns": [
+          "Est-ce que le marron va bien avec le noir ?",
+          "Puis-je porter un haut marron avec un pantalon noir ?",
+          "Le marron et le noir vont-ils bien ensemble ?",
+          "Le marron et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du noir ?"
+        ],
+        "responses": ["Le marron et le noir forment une combinaison classique et intemporelle, parfaite pour une tenue élégante et sophistiquée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_61",
+        "patterns": [
+          "Est-ce que le marron va bien avec le bleu ?",
+          "Puis-je porter un haut marron avec un pantalon bleu ?",
+          "Le marron et le bleu vont-ils bien ensemble ?",
+          "Le marron et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du bleu ?"
+        ],
+        "responses": ["Le marron et le bleu créent une combinaison chaleureuse et apaisante, parfaite pour une tenue décontractée et élégante."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_62",
+        "patterns": [
+          "Est-ce que le marron va bien avec le rouge ?",
+          "Puis-je porter un haut marron avec un pantalon rouge ?",
+          "Le marron et le rouge vont-ils bien ensemble ?",
+          "Le marron et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du rouge ?"
+        ],
+        "responses": ["Le marron et le rouge forment une combinaison chaleureuse et audacieuse, idéale pour une tenue dynamique et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_63",
+        "patterns": [
+          "Est-ce que le marron va bien avec le vert ?",
+          "Puis-je porter un haut marron avec un pantalon vert ?",
+          "Le marron et le vert vont-ils bien ensemble ?",
+          "Le marron et le vert sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du vert ?"
+        ],
+        "responses": ["Le marron et le vert créent une combinaison naturelle et terreuse, parfaite pour une tenue décontractée et équilibrée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_64",
+        "patterns": [
+          "Est-ce que le marron va bien avec le jaune ?",
+          "Puis-je porter un haut marron avec un pantalon jaune ?",
+          "Le marron et le jaune vont-ils bien ensemble ?",
+          "Le marron et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du jaune ?"
+        ],
+        "responses": ["Le marron et le jaune créent une combinaison chaleureuse et ensoleillée, parfaite pour une tenue estivale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_65",
+        "patterns": [
+          "Est-ce que le marron va bien avec l'orange ?",
+          "Puis-je porter un haut marron avec un pantalon orange ?",
+          "Le marron et l'orange vont-ils bien ensemble ?",
+          "Le marron et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Le marron et l'orange créent une combinaison chaleureuse et vibrante, parfaite pour une tenue estivale et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_66",
+        "patterns": [
+          "Est-ce que le marron va bien avec le rose ?",
+          "Puis-je porter un haut marron avec un pantalon rose ?",
+          "Le marron et le rose vont-ils bien ensemble ?",
+          "Le marron et le rose sont-ils une bonne combinaison ?",
+          "Est-ce que le marron peut être porté avec du rose ?"
+        ],
+        "responses": ["Le marron et le rose créent une combinaison douce et délicate, parfaite pour une tenue féminine et romantique."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_67",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le blanc ?",
+          "Puis-je porter un haut jaune avec un pantalon blanc ?",
+          "Le jaune et le blanc vont-ils bien ensemble ?",
+          "Le jaune et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du blanc ?"
+        ],
+        "responses": ["Le jaune et le blanc créent une combinaison lumineuse et fraîche, parfaite pour une tenue estivale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_68",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le noir ?",
+          "Puis-je porter un haut jaune avec un pantalon noir ?",
+          "Le jaune et le noir vont-ils bien ensemble ?",
+          "Le jaune et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du noir ?"
+        ],
+        "responses": ["Le jaune et le noir forment une combinaison audacieuse et élégante, parfaite pour une tenue chic et moderne."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_69",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le bleu ?",
+          "Puis-je porter un haut jaune avec un pantalon bleu ?",
+          "Le jaune et le bleu vont-ils bien ensemble ?",
+          "Le jaune et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du bleu ?"
+        ],
+        "responses": ["Le jaune et le bleu créent une combinaison vive et énergique, parfaite pour une tenue estivale et décontractée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_70",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le rouge ?",
+          "Puis-je porter un haut jaune avec un pantalon rouge ?",
+          "Le jaune et le rouge vont-ils bien ensemble ?",
+          "Le jaune et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du rouge ?"
+        ],
+        "responses": ["Le jaune et le rouge forment une combinaison vibrante et audacieuse, parfaite pour une tenue estivale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_71",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le violet ?",
+          "Puis-je porter un haut jaune avec un pantalon violet ?",
+          "Le jaune et le violet vont-ils bien ensemble ?",
+          "Le jaune et le violet sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du violet ?"
+        ],
+        "responses": ["Le jaune et le violet forment une combinaison vive et contrastée, parfaite pour une tenue estivale et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetement_72",
+        "patterns": [
+          "Est-ce que le jaune va bien avec l'orange ?",
+          "Puis-je porter un haut jaune avec un pantalon orange ?",
+          "Le jaune et l'orange vont-ils bien ensemble ?",
+          "Le jaune et l'orange sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec de l'orange ?"
+        ],
+        "responses": ["Le jaune et l'orange créent une combinaison lumineuse et énergique, parfaite pour une tenue estivale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_73",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le rose ?",
+          "Puis-je porter un haut jaune avec un pantalon rose ?",
+          "Le jaune et le rose vont-ils bien ensemble ?",
+          "Le jaune et le rose sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du rose ?"
+        ],
+        "responses": ["Le jaune et le rose créent une combinaison douce et lumineuse, parfaite pour une tenue estivale et féminine."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_74",
+        "patterns": [
+          "Est-ce que le jaune va bien avec le beige ?",
+          "Puis-je porter un haut jaune avec un pantalon beige ?",
+          "Le jaune et le beige vont-ils bien ensemble ?",
+          "Le jaune et le beige sont-ils une bonne combinaison ?",
+          "Est-ce que le jaune peut être porté avec du beige ?"
+        ],
+        "responses": ["Le jaune et le beige créent une combinaison élégante et chaleureuse, parfaite pour une tenue estivale et décontractée."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_75",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le blanc ?",
+          "Puis-je porter un haut orange avec un pantalon blanc ?",
+          "L'orange et le blanc vont-ils bien ensemble ?",
+          "L'orange et le blanc sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du blanc ?"
+        ],
+        "responses": ["L'orange et le blanc forment une combinaison lumineuse et estivale, parfaite pour une tenue dynamique et fraîche."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_76",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le noir ?",
+          "Puis-je porter un haut orange avec un pantalon noir ?",
+          "L'orange et le noir vont-ils bien ensemble ?",
+          "L'orange et le noir sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du noir ?"
+        ],
+        "responses": ["L'orange et le noir créent une combinaison audacieuse et élégante, parfaite pour une tenue chic et moderne."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_77",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le bleu ?",
+          "Puis-je porter un haut orange avec un pantalon bleu ?",
+          "L'orange et le bleu vont-ils bien ensemble ?",
+          "L'orange et le bleu sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du bleu ?"
+        ],
+        "responses": ["L'orange et le bleu forment une combinaison vive et contrastée, parfaite pour une tenue estivale et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_78",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le rouge ?",
+          "Puis-je porter un haut orange avec un pantalon rouge ?",
+          "L'orange et le rouge vont-ils bien ensemble ?",
+          "L'orange et le rouge sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du rouge ?"
+        ],
+        "responses": ["L'orange et le rouge créent une combinaison vibrante et chaleureuse, parfaite pour une tenue estivale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_80",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le violet ?",
+          "Puis-je porter un haut orange avec un pantalon violet ?",
+          "L'orange et le violet vont-ils bien ensemble ?",
+          "L'orange et le violet sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du violet ?"
+        ],
+        "responses": ["L'orange et le violet forment une combinaison vive et audacieuse, parfaite pour une tenue estivale et originale."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_81",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le jaune ?",
+          "Puis-je porter un haut orange avec un pantalon jaune ?",
+          "L'orange et le jaune vont-ils bien ensemble ?",
+          "L'orange et le jaune sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du jaune ?"
+        ],
+        "responses": ["L'orange et le jaune créent une combinaison lumineuse et énergique, parfaite pour une tenue estivale et dynamique."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_82",
+        "patterns": [
+          "Est-ce que l'orange va bien avec le rose ?",
+          "Puis-je porter un haut orange avec un pantalon rose ?",
+          "L'orange et le rose vont-ils bien ensemble ?",
+          "L'orange et le rose sont-ils une bonne combinaison ?",
+          "Est-ce que l'orange peut être porté avec du rose ?"
+        ],
+        "responses": ["L'orange et le rose créent une combinaison douce et lumineuse, parfaite pour une tenue estivale et féminine."]
+      },
+    {
+    "tag": "recommandation_couleurs_vetements_84",
+    "patterns": [
+      "Quelles sont de bonnes combinaisons de couleurs pour l'été ?",
+      "Quelles couleurs devrais-je porter pour rester frais en été ?",
+      "Quelles combinaisons de couleurs sont estivales et légères ?"
+    ],
+    "responses": ["Le bleu et le blanc sont des choix parfaits pour l'été, offrant fraîcheur et légèreté dans vos tenues estivales."]
+  },
+    {
+        "tag": "recommandation_couleurs_vetements_85",
+        "patterns": [
+          "Quelles sont les meilleures combinaisons de couleurs pour un mariage estival ?",
+          "Quels vêtements devrais-je porter pour un mariage en été ?",
+          "Quelles couleurs sont idéales pour un mariage en plein air pendant l'été ?"
+        ],
+        "responses": ["Le corail et le champagne sont des choix élégants et estivaux pour un mariage estival, ajoutant une touche de fraîcheur et de sophistication à votre tenue."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_86",
+        "patterns": [
+          "Quelles combinaisons de couleurs sont parfaites pour un mariage d'été en plein air ?",
+          "Quels vêtements devrais-je choisir pour un mariage estival sur la plage ?",
+          "Quelles sont les couleurs tendance pour les mariages en été cette année ?"
+        ],
+        "responses": ["Le menthe et la pêche sont des couleurs rafraîchissantes et romantiques, parfaites pour un mariage d'été en plein air, apportant une ambiance légère et joyeuse à votre tenue."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_87",
+        "patterns": [
+          "Quelles couleurs sont les plus appropriées pour un mariage estival ?",
+          "Quels accessoires devrais-je choisir pour compléter ma tenue de mariage en été ?",
+          "Comment puis-je coordonner mes vêtements pour un mariage en été ?"
+        ],
+        "responses": ["Le rose poudré et la lavande sont des choix doux et romantiques pour un mariage estival, créant une ambiance délicate et élégante pour votre tenue de mariage."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_88",
+        "patterns": [
+          "Quels sont les assortiments de couleurs les plus tendance pour un mariage d'été ?",
+          "Quelles couleurs reflètent le mieux l'atmosphère estivale pour un mariage ?",
+          "Quelles combinaisons de couleurs sont idéales pour un mariage en été au bord de la mer ?"
+        ],
+        "responses": ["Le bleu ciel et le sable sont des choix frais et apaisants pour un mariage estival, évoquant la beauté naturelle de la plage et de l'océan dans votre tenue de mariage."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_89",
+        "patterns": [
+          "Quelle couleur de vêtements est la plus appropriée pour le travail de bureau ?",
+          "Quelles couleurs sont professionnelles pour les tenues de travail ?",
+          "Quelle couleur de chemise est recommandée pour les réunions d'affaires ?"
+        ],
+        "responses": ["Le bleu marine est une couleur classique et professionnelle pour les vêtements de travail. Elle projette une image de sérieux et de fiabilité."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_90",
+        "patterns": [
+          "Quelle est la meilleure couleur de costume pour les environnements professionnels ?",
+          "Quelles couleurs sont neutres et polyvalentes pour les vêtements de travail ?",
+          "Comment puis-je m'habiller de façon professionnelle sans paraître ennuyeux ?"
+        ],
+        "responses": ["Le gris foncé est une couleur sobre et élégante pour les vêtements de travail. Elle convient à différents environnements professionnels et permet de créer une image sérieuse et stylée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_91",
+        "patterns": [
+          "Est-il acceptable de porter du noir au travail ?",
+          "Quelles sont les couleurs sûres pour les tenues de travail formelles ?",
+          "Le noir est-il trop sévère pour un environnement de travail décontracté ?"
+        ],
+        "responses": ["Le noir est une couleur classique et polyvalente pour les vêtements de travail. Elle crée une impression d'élégance et de professionnalisme, adaptée à la plupart des environnements de travail."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_92",
+        "patterns": [
+          "Quelles couleurs de chemises sont les plus appropriées pour les réunions d'affaires ?",
+          "Le bleu clair est-il une couleur professionnelle pour les vêtements de travail ?",
+          "Comment puis-je paraître professionnel tout en étant confortablement habillé ?"
+        ],
+        "responses": ["Le bleu clair est une couleur professionnelle et rafraîchissante pour les vêtements de travail. Elle transmet une image de confiance et de calme lors des interactions professionnelles."]
+      },
+    {
+        "tag": "recommandation_couleurs_vetements_93",
+        "patterns": [
+          "Quelle couleur de robe est classique pour une soirée formelle ?",
+          "Le noir est-il toujours élégant pour les tenues de soirée ?",
+          "Quelle couleur de costume convient le mieux à un événement de gala ?"
+        ],
+        "responses": ["Le noir est une couleur intemporelle et élégante pour les tenues de soirée. Elle crée une silhouette sophistiquée et convient à toutes les occasions formelles."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_94",
+        "patterns": [
+          "Quelle couleur de robe attire le plus l'attention lors d'une soirée ?",
+          "Le rouge est-il une couleur appropriée pour une soirée romantique ?",
+          "Comment puis-je me démarquer avec ma tenue lors d'un événement mondain ?"
+        ],
+        "responses": ["Le rouge est une couleur vibrante et audacieuse pour les tenues de soirée. Elle attire l'attention et crée une ambiance passionnée, parfaite pour les occasions spéciales et romantiques."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_95",
+        "patterns": [
+          "Le bleu marine est-il une couleur élégante pour une soirée ?",
+          "Quelles couleurs sont sophistiquées pour les événements de gala ?",
+          "Comment puis-je paraître élégant sans porter de noir lors d'une soirée ?"
+        ],
+        "responses": ["Le bleu marine est une couleur chic et polyvalente pour les tenues de soirée. Elle offre une alternative élégante au noir tout en conservant une allure sophistiquée et raffinée."]
+      },
+      {
+        "tag": "recommandation_couleurs_vetements_96",
+        "patterns": [
+          "Quelle couleur de robe est élégante pour une soirée de gala ?",
+          "L'argent est-il une couleur adaptée pour une soirée de remise de prix ?",
+          "Comment puis-je ajouter une touche d'éclat à ma tenue de soirée ?"
+        ],
+        "responses": ["L'argent est une couleur glamour et festive pour les tenues de soirée. Elle crée un effet lumineux et sophistiqué, parfait pour briller lors d'événements spéciaux et festifs."]
+      }
+
+  ]
+}
+  

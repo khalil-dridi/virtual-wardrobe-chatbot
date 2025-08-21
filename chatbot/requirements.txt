@@ -1,0 +1,4 @@
+tensorflow
+nltk
+tflearn
+flask_cors
