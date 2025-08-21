@@ -1,49 +1,46 @@
 # 🌐 Virtual Wardrobe Chatbot
 
+[![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)](https://www.java.com/) 
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2-green?logo=spring&logoColor=white)](https://spring.io/projects/spring-boot) 
+[![Angular](https://img.shields.io/badge/Angular-17-red?logo=angular&logoColor=white)](https://angular.io/) 
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/khalil-dridi/virtual-wardrobe-chatbot)](https://github.com/khalil-dridi/virtual-wardrobe-chatbot/issues)
+[![Forks](https://img.shields.io/github/forks/khalil-dridi/virtual-wardrobe-chatbot)](https://github.com/khalil-dridi/virtual-wardrobe-chatbot/network/members)
+[![Stars](https://img.shields.io/github/stars/khalil-dridi/virtual-wardrobe-chatbot)](https://github.com/khalil-dridi/virtual-wardrobe-chatbot/stargazers)
+
+---
+
 ## 🚀 Description
-Cette application est une plateforme complète qui offre plusieurs fonctionnalités :  
-- **Gestion des utilisateurs** (inscription, authentification, rôles)
-- **Gestion des événements via calendrier intégré  
-- **Gestion des tendances** (actualité et suivi des tendances)  
-- **Météo** (affichage en temps réel via API)  
-- **Calendrier** (gestion des événements et agenda)  
-- **Chatbot supervisé avec NLP** (assistant intelligent)  
-- **Sécurité** avec **Spring Security + JWT**  
+Application web complète permettant de gérer :  
+- **Utilisateurs** (CRUD + rôles)  
+- **Tendances** (actualité)  
+- **Météo** (API en temps réel)  
+- **Calendrier** (gestion événements)  
+- **Chatbot supervisé NLP**  
+- **Sécurité** avec Spring Security + JWT  
 
-L’application est divisée en trois parties :  
+Divisée en trois parties :  
 - **Backend** : Spring Boot (API REST sécurisée)  
-- **Frontend** : Angular (interface utilisateur moderne)  
-- **Chatbot** : Python (NLP supervisé)
+- **Frontend** : Angular (UI moderne et responsive)  
+- **Chatbot** : Python (IA conversationnelle supervisée)
 
 ---
 
-## 🛠️ Technologies utilisées
-
-### Backend (Java - Spring Boot)
-- Spring Boot  
-- Spring Security + JWT  
-- Spring Data JPA / Hibernate  
-- MySQL  
-- Maven  
-
-### Frontend (Angular)
-- Angular 17+  
-- Bootstrap / Tailwind CSS  
-- Chart.js / Recharts (si utilisé)  
-
-### Autres
-- API météo (OpenWeatherMap ou autre)  
-- NLP supervisé pour le chatbot (Python)  
+## 🛠️ Technologies
+- **Backend** : Java 17, Spring Boot, Spring Security, JWT, MySQL, Maven  
+- **Frontend** : Angular 17+, Bootstrap / Tailwind, Chart.js / Recharts  
+- **Chatbot** : Python, NLP supervisé  
+- **Autres** : API météo
 
 ---
 
-## ⚙️ Fonctionnalités principales
-✅ Authentification et autorisation sécurisée (JWT)  
-✅ CRUD utilisateurs et rôles  
-✅ Gestion des événements via calendrier intégré  
-✅ Gestion des tendances
-✅ Affichage de la météo en temps réel  
-✅ Suivi et affichage des tendances  
-✅ Chatbot intelligent avec NLP supervisé  
+## ⚙️ Fonctionnalités
+✅ Authentification sécurisée (JWT)  
+✅ Gestion utilisateurs et rôles  
+✅ Gestion événements via calendrier  
+✅ Affichage météo temps réel  
+✅ Suivi tendances  
+✅ Chatbot intelligent
 
 ---
