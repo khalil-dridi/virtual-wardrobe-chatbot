@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex; /* Utilisation de flexbox */
+}
+
+.sidebar {
+    flex: 0 0 250px; 
+}
+
+.content {
+    flex: 1; 
+}
+.header {
+    height: 60px; 
+}

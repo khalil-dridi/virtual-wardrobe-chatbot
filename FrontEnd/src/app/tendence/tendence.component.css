@@ -1,0 +1,29 @@
+.layout {
+  display: grid;
+  grid-template-columns: 160px 1fr; /* Ajustez la taille de la sidebar selon vos besoins */
+  height: 100vh; /* Assurez-vous que le layout occupe toute la hauteur de la fenêtre */
+}
+
+.container {
+  width: 80%;
+  
+  margin-top: 5%;
+  padding: 20px; /* Ajoutez du padding pour un espacement intérieur */
+  overflow-y: auto; /* Permet le défilement du contenu principal */
+}
+.center-text {
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+.description{
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 5%;
+  margin-right: 8%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+font-size: 21px;
+  
+}

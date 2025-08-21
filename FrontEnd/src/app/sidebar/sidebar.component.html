@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+<body>
+    <aside class="sidebar">
+      <div class="logo" >
+        <img [src]="imageSrc" alt="">
+        <h2 *ngIf="test==1" >{{userData1.firstName}} {{userData1.lastName}}</h2>
+        <h2 *ngIf="test==0">{{userData.firstName}} {{userData.lastName}}</h2>
+      </div>
+      <ul class="links">
+        <h4 *ngIf="test==0">Menu principal</h4>
+        <li *ngIf="test==0" (click)="toggleWardrobe()" [class.open]="isWardrobeOpen" routerLink="/categorie">
+          <span class="material-symbols-outlined">dashboard</span>
+          <a >Garde-robe</a>
+        </li>
+        <li  *ngIf="test==0" routerLink="/chatbot">
+          <span class="material-symbols-outlined">
+            forum
+            </span>
+          <a >ChatBot</a>
+        </li>
+        <li *ngIf="test==0" routerLink="/calendar">
+          <span class="material-symbols-outlined">
+            calendar_month
+            </span>
+          <a >Calendrier</a>
+        </li>
+      
+        
+        <li *ngIf="test==0" routerLink="/weather">
+          <span class="material-symbols-outlined">
+            partly_cloudy_day
+            </span>
+          <a >Meteto</a>
+        </li>
+        <li *ngIf="test==0" routerLink="/tendence">
+         
+            <span class="material-symbols-outlined">
+              hotel_class
+              </span>
+          <a >tendence</a>
+        </li>
+        <li *ngIf="test==1" routerLink="/tendences">
+         
+          <span class="material-symbols-outlined">
+            hotel_class
+            </span>
+        <a >tendence</a>
+      </li>
+      <li *ngIf="test==1" routerLink="/users">
+         
+        <span class="material-symbols-outlined">
+          person
+          </span>
+      <a >utilisateurs</a>
+    </li>
+      
+        
+        
+        <hr>
+        <h4>Compte</h4>
+        <li *ngIf="test==0"  routerLink="/account">
+          <span class="material-symbols-outlined">
+            person
+            </span>
+          <a >Profile</a>
+        </li>
+        
+        <li class="logout-link" (click)="logOut()">
+          <span class="material-symbols-outlined">logout</span>
+          <a >Déconnexion</a>
+        </li>
+      </ul>
+    </aside>
+    
+  </body>

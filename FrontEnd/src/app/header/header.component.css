@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+:root {
+  --primary-color: #3685fb;
+  --primary-color-dark: #2f73d9;
+  --secondary-color: #fafcff;
+  --text-dark: #0d213f;
+  --text-light: #767268;
+  --extra-light: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  color: var(--text-dark);
+  max-width: calc(var(--max-width) / 2);
+}
+
+
+
+
+
+
+  
+  header {
+    background: linear-gradient(to right, rgb(241, 231, 241), white);
+    
+
+  }
+  
+  .header__container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+  }
+  
+  .header__image {
+    position: relative;
+    margin-left: 100px;
+  }
+  
+  .header__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0.5rem solid var(--extra-light);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header__image img:nth-child(1) {
+    max-width: 450px;
+    transform: translate(-75%, -50%);
+  }
+  
+  .header__image img:nth-child(2) {
+    max-width: 300px;
+    transform: translate(0%, -5%);
+  }
+  
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+  
+  .header__content > div {
+    max-width: 400px;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .header__content .sub__header {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .header__content h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--text-dark);
+    font-weight: 900;
+  }
+  
+  .header__content .action__btns {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  
+  .sign-btn {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(to right, #6B44E0, #a792e7);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+    margin-right: 5rem;
+    margin-top: 15px;
+  }
+  .sign-btn:hover {
+    background-color: #5b0c59;
+  }
+  
+  

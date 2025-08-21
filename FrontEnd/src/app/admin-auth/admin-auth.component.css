@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: rgb(219, 219, 219);
+    height: 100vh; /* Utilisation de la hauteur de la fenêtre pour remplir l'écran */
+    display: flex; /* Utilisation de flexbox pour centrer le contenu */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+  }
+  
+  .login-box {
+    width: 350px;
+    height: 400px;
+    background: rgb(214, 214, 214);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6a9a9,5px 5px 10px #b6a9a9;
+
+    border-color: blueviolet;
+  }
+  
+  .admin-icon {
+    font-size: 58px; 
+    margin: 15px auto 20px; /* Ajustement de la marge pour centrer l'icône */
+    color: rgb(170, 16, 16); 
+    display: block; 
+    margin-left: 150px;
+  }
+  
+  h2 {
+   margin-left: 25%;
+    margin-bottom: 20%;
+    color: #4e4e4e;
+  }
+  
+  form {
+    top:20px;
+    margin-left: 40px;
+  }
+  
+  input {
+    display: block;
+    width: 80%;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    background: transparent;
+    font-size: 16px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 0 #fff;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    
+  }
+  
+  button {
+    width: 50%;
+    border: none;
+    height: 40px;
+    border-radius: 25px;
+    background: rgb(170, 16, 16);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: -5px -5px 20px rgb(224, 217, 217), 5px 5px 20px #babecc;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 15%;
+  }
+  
+  input:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+  
+  button:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+  
+  .signin-container {
+    max-width: 400px; /* ajustez la largeur maximale selon vos besoins */
+    margin: auto; /* centrer le formulaire horizontalement */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  
+  
+  

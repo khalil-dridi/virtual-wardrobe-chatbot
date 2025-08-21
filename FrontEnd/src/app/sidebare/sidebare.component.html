@@ -1,0 +1,61 @@
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<section id="sidebar">
+    <div class="user">
+        <div class="user-info">
+            <img class="img-profile img-circle img-responsive center-block" [src]="imageSrc" alt="">
+            <ul class="meta list list-unstyled">
+                <li class="name ">{{userData.username}}</li>
+            </ul>
+        </div>
+    </div>
+    <ul class="side-menu top">
+        <li class="active">
+            <a routerLink="/account">
+                <i class='bx bx-user'></i>
+                <span class="text">Profil</span>
+            </a>
+        </li>
+       
+    <li (click)="toggleWardrobe()" [class.open]="isWardrobeOpen">
+        <a routerLink="/categorie">
+            <i class='bx bx-closet'></i>
+            <span class="text">Wardrobe</span>
+        </a>
+        
+    </li>
+
+    <li class="other-menu-item"> <!-- Ajoutez la classe "other-menu-item" -->
+        <a routerLink="/chatbot">
+            <i class='bx bx-message-square-detail'></i>
+            <span class="text">ChatBot</span>
+        </a>
+    </li>
+
+    <li class="other-menu-item"> <!-- Ajoutez la classe "other-menu-item" -->
+        <a routerLink="/calendar">
+            <i class='bx bx-calendar-event'></i>
+            <span class="text">Calendar</span>
+        </a>
+    </li>
+    <li class="other-menu-item"> <!-- Ajoutez la classe "other-menu-item" -->
+        <a routerLink="/eventList">
+            <i class='bx bx-calendar-event'></i>
+            <span class="text">event List</span>
+        </a>
+    </li>
+
+    <li class="other-menu-item"> <!-- Ajoutez la classe "other-menu-item" -->
+        <a routerLink="/weather">
+            <i class='bx bx-sun'></i>
+            <span class="text">Weather</span>
+        </a>
+    </li>
+    <li class="other-menu-item" (click)="logOut()" style="cursor: pointer;">
+        <a class="logout">
+            <i class='bx bx-log-out'></i>
+            <span class="text">Logout</span>
+        </a>
+    </li>
+    
+    </ul>
+</section>

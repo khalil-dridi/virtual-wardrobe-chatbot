@@ -1,0 +1,87 @@
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  
+<div class="container" style="margin-left: 50px;height:900px;">
+  <div class="view-account">
+    <section class="module" style="margin-right: -100px;">
+      <div class="module-inner" >
+        <div class="content-panel"  >
+          <form class="form-horizontal">
+            <fieldset class="fieldset">
+              <h3 class="fieldset-title">Informations personnelles</h3>
+              <div class="updateimg">
+                <div class="form-group avatar">
+                  <figure class="figure col-md-2 col-sm-3 col-xs-12">
+                    <img class="img-rounded img-responsive" [src]="imageSrc" alt=""  style="width: 170px;height: 170px; border-radius: 50%; " >
+                    
+                  </figure>
+                  <div class="form-inline col-md-10 col-sm-9 col-xs-12">
+                    <input type="file" class="file-uploader pull-left" #fileInput (change)="onFileSelected($event)"><br> <br>
+                    <button type="submit" class="up" (click)="updateImage()">Modifier l'Image</button>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Prenom</label>
+                <div class="col-md-10 col-sm-9 col-xs-12">
+                  <input type="text" name="email" [(ngModel)]="firstName" class="form-control" placeholder="{{userData.firstName}}">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Nom</label>
+                <div class="col-md-10 col-sm-9 col-xs-12">
+                  <input type="text" class="form-control"  name="lastName" [(ngModel)]="lastName" placeholder="{{userData.lastName}}">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Nom de l'utilisateur</label>
+                <div class="col-md-10 col-sm-9 col-xs-12">
+                  <input type="text" class="form-control" name="username" [(ngModel)]="username" placeholder="{{userData.username}}">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <div class="form-group">
+                <label class="col-md-2 col-sm-3 col-xs-12 control-label">E-mail</label>
+                <div class="col-md-10 col-sm-9 col-xs-12">
+                  <input type="email"name="email" class="form-control"name="email" [(ngModel)]="email" placeholder="{{userData.email}}">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Mot de passe</label>
+                <div class="col-md-10 col-sm-9 col-xs-12">
+                  <input type="text" class="form-control"name="password" [(ngModel)]="password" placeholder="Ecrire votre nouveua mot de passe ...">
+                </div>
+              </div>
+           
+            </fieldset>
+            <hr>
+            <div class="form-group">
+              <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                <input class="btn btn-primary mr-4" type="submit" (click)="updateProfile()" value="Modifier Profile">
+                <input class="btn btn-danger ml-4" type="submit" (click)="deleteProfile()" value="Supprimer Profile">
+            </div>
+            
+            </div>
+          </form>
+          <div *ngIf="weatherMessage" class="weather-message">
+            <p>{{ weatherMessage }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+ 
+
+</div>
+
+
+
+
+
+
+  <p-confirmDialog header="Confirmation" key="confirm1" icon="pi pi-exclamation-triangle" message="Are you sure you want to proceed?"
+  [style]="{width: '350px'}" acceptButtonStyleClass="p-button-text" rejectButtonStyleClass="p-button-text">
+</p-confirmDialog>

@@ -1,0 +1,189 @@
+<app-navbar></app-navbar>
+<body>
+    <div class="container" #container>
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!--sign in-->
+          <form action="#" class="sign-in-form" [formGroup]="signinForm" >
+            <img src="../../assets/man (2).png" class="man">
+            
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nom de l'utilisateur "  formControlName="userNamein" [(ngModel)]="username"/>
+              <small class="text-danger" *ngIf="userNamein?.invalid && (userNamein?.dirty || userNamein?.touched)">
+                <i *ngIf="userNamein?.errors?.['required']">
+                 <span>Please enter your Username</span>   
+                </i>
+            </small>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Mot de passe" formControlName="Passwordin"[(ngModel)]="Password"/>
+              <small class="text-danger" *ngIf="Passwordin?.errors?.['required'] && Passwordin?.touched">
+                <i>Please enter your password</i>
+              </small>
+            </div>
+            <button type="submit" value="Login" class="btn solid" [disabled]="!signinForm.valid" class="btn" (click)="sign_in()"  >Se connecter</button>
+            
+          </form>
+
+
+
+
+
+
+           <!--sign up--> 
+          <form action="#" class="sign-up-form"  [formGroup]="registerForm" >
+            <h2 class="title">Créez un compte</h2>
+            <div class="flex-container"style="width: 180px">
+            
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="   Prenom"  formControlName="firstName" [(ngModel)]="user.firstName" style="margin-left: 10px;"/>
+                <small class="text-danger" *ngIf="firstName?.invalid && (firstName?.dirty || firstName?.touched)">
+                  <i *ngIf="firstName?.errors?.['required']">
+                      Please enter your First Name
+                  </i>
+              </small>
+           
+              </div>
+              <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Nom"  formControlName="lastName" [(ngModel)]="user.lastName" style="margin-left: 10px;"/>
+                <small class="text-danger" *ngIf="lastName?.invalid && (lastName?.dirty || lastName?.touched)">
+                  <i *ngIf="lastName?.errors?.['required']">
+                   <span>Please enter your last Name</span>   
+                  </i>
+              </small>
+              </div>
+              </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nom de l'utilisateur" formControlName="userName" [(ngModel)]="user.username" />
+              <small class="text-danger" *ngIf="userName?.invalid && (userName?.dirty || userName?.touched)" >
+                <i *ngIf="userName?.errors?.['required']">
+                 <span>Please enter your Username</span>   
+                </i>
+            </small>
+            </div>
+
+
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" formControlName="email" [(ngModel)]="user.email"/>
+              <small class="text-success" *ngIf="email?.valid && (email?.dirty || email?.touched)">
+                <i>  Email syntax is correct </i>
+               
+            </small>
+            <small class="text-danger" *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+                <i *ngIf="email?.errors?.['required']">
+                  Please enter your Email
+                </i>
+                <i *ngIf="email?.errors?.['email']">
+                    Please enter a valid email address
+                </i>
+            </small>
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password"  placeholder="Mot de passe" formControlName="password" [(ngModel)]="user.password"/>
+              
+           </div>
+           <div class="form-group" *ngIf="password?.invalid && (password?.dirty || password?.touched)" style="position: relative; margin-bottom: 30px;">
+            <label class="col_invalid_msg" [ngClass]="password?.hasError('required') || password?.hasError('minlength')  ? 'text-danger' : 'text-success'">
+                <i >
+                    {{ password?.hasError('required') || password?.hasError('minlength') ? '' : '' }}
+                </i> Must be at least 8 characters!
+            </label>
+            <label class="col_invalid_msg" [ngClass]="password?.hasError('required') || password?.hasError('hasNumber')  ? 'text-danger' : 'text-success'">
+                <i >
+                    {{ password?.hasError('required') || password?.hasError('hasNumber') ? '' : '' }}
+                </i>
+                Must contain at least 1 number!
+            </label>
+
+      
+          <label class="col_invalid_msg" [ngClass]="password?.hasError('required') || password?.hasError('hasCapitalCase')  ? 'text-danger' : 'text-success'">
+              <i >
+                  {{ password?.hasError('required') || password?.hasError('hasCapitalCase') ? '' : '' }}
+              </i>
+              Must contain at least 1 in Capital Case!
+          </label>
+          <label class="col_invalid_msg" [ngClass]="password?.hasError('required') || password?.hasError('hasSmallCase') ? 'text-danger' : 'text-success'">
+              <i >
+                  {{ password?.hasError('required') || password?.hasError('hasSmallCase') ? '' : '' }}
+              </i>
+              Must contain at least 1 Letter in Small Case!
+          </label>
+          <label class="col_invalid_msg" [ngClass]="password?.hasError('required') || password?.hasError('hasSpecialCharacters') ? 'text-danger' : 'text-success'">
+              <i >
+                  {{ password?.hasError('required') || password?.hasError('hasSpecialCharacters') ? '' : '' }}
+              </i>Must contain at least 1 Special Character!
+          </label>
+
+
+     </div> 
+
+
+
+
+
+
+
+            <div class="input-field" >
+                <i class="fas fa-lock"></i>
+                <input  type="password" placeholder="Confirmer Mot de passe"  formControlName="confirm_password" />
+                <small class="text-danger" *ngIf="confirm_password?.invalid && (confirm_password?.dirty || confirm_password?.touched)">
+                  <i *ngIf="confirm_password?.errors?.['required']">
+                      Please Confirm password 
+                  </i>
+                  <i *ngIf="confirm_password?.hasError('not_matching') && !registerForm.controls['confirm_password'].errors?.['required']">
+                      The password doesn't match!
+                  </i>
+              </small>
+              <i class="text-success" *ngIf="registerForm.controls['password'].value === registerForm.controls['confirm_password'].value && registerForm.controls['confirm_password'].touched && !confirm_password?.hasError('not_matching') && !confirm_password?.errors?.['required']">
+                <i>Password confirmed successfully</i>  
+              </i>
+              </div>
+
+
+
+
+
+            <input type="submit" class="btn"  [disabled]="registerForm.invalid"  (click)="sign_up()" value="Register"/>
+          
+           
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Nouveau ici ?</h3>
+            <p>
+              Créez un compte pour organiser votre garde-robe, planifier vos tenues et obtenir des conseils personnalisés !
+            </p>
+            <button class="btn transparent" #signUpBtn>
+              Register
+            </button>
+          </div>
+          <img src="../../assets/Dressing room-pana.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Un de nous ?</h3>
+            <p>
+              Connectez-vous pour accéder à votre garde-robe virtuelle, planifier vos tenues et recevoir des conseils personnalisés !
+            </p>
+            <button class="btn transparent" #signInBtn >
+              Se Connecter
+            </button>
+          </div>
+          <img src="../../assets/Choosing clothes-pana (1).png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+  </body>

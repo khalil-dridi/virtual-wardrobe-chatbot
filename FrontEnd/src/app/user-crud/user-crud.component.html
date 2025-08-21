@@ -1,0 +1,180 @@
+<div class="header">
+	<div class="container-fluid mb-3">
+		
+			<div class="col-md-12 bg-light border-bottom pt-5 pb-5">
+				<div class="container">
+					
+					<div class="button-form-container">
+						<form class="form-inline mt-4 search-form">
+							<input class="form-control mr-sm-2" name="search" type="search" placeholder="Rechecher" aria-label="Search" [(ngModel)]="searchTerm" (input)="filterClothesByName()">
+						</form>
+					
+						
+					</div>
+			</div>
+			</div>
+		
+	</div>
+</div>
+<div class="wrapper">
+	<div class="sidebar">
+		<app-sidebar></app-sidebar>
+	</div>
+	<div class="content">
+		
+
+			<div class = "container1">
+				<div class = "filter-items" *ngFor="let user of filteredClothes">
+					<div class="w3-card-4">
+
+                        <header class="w3-container w3-light-grey">
+                          <h3>{{user.firstName}} {{user.lastName}}</h3>
+                        </header>
+                        
+                        <div class="w3-container">
+                          <p>E-mail : {{user.email}}</p>
+                          <hr>
+                          <img [src]="user.imageName ? 'assets/images/'+user.imageName : 'https://bootdey.com/img/Content/avatar/avatar1.png'"   alt="Avatar" class="w3-left w3-circle" style="width: 200px;height: 200px;;">
+                          <p>Date de Creation : {{user.creationDate}}</p>
+                        </div>
+                        
+                        <button class="w3-button w3-block w3-dark-grey" (click)="deleteUser(user.id)">Supprimer</button>
+                      
+                        
+                        </div>
+
+	  
+					
+				</div>
+			</div>
+		
+		
+	</div>
+	</div>
+  <p-dialog header="New Clothes" [(visible)]="displayBasic" [style]="{width: '50vw'}" [baseZIndex]="10000">
+    
+		
+		<div class="grid">
+			<div class="col-12 lg:col-2">
+				<div class="col-12 md:col-4">
+					
+				</div>
+			</div>
+			<div class="col-12 lg:col-10">
+				<div class="grid formgrid p-fluid">
+				  
+					<div class="field mb-4 col-12">
+						<label for="name" class="font-medium text-900"
+							>name</label
+						>
+						<input [(ngModel)]="name" id="name" type="text" pInputText />
+					</div>
+					<label for="name" class="font-medium text-900"
+							>Category</label>
+					<select class="form-select" aria-label="Default select example" [(ngModel)]="category">
+						
+						<option value="SHIRT">SHIRT</option>
+						<option value="PANTS">PANTS</option>
+						<option value="JACKET">JACKET</option>
+						<option value="SWEATER">SWEATER</option>
+						<option value="SHOES">SHOES</option>
+						<option value="ACCESSORIES">ACCESSORIES</option>
+					  </select>
+					<div class="field mb-4 col-12">
+						<label for="userName" class="font-medium text-900"
+							>description</label
+						>
+						<input [(ngModel)]="description" id="description" type="text" pInputText />
+					</div>
+			
+				
+					<div class="field mb-4 col-12">
+						
+						<input type="file" class="file-uploader pull-left" #fileInput (change)="onFileSelected($event)">
+					</div>
+					
+				  
+				  
+				   
+					
+						
+				
+	
+					<div class="col-12">
+						
+						<p-messages [value]="msgs"></p-messages>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+		<ng-template pTemplate="footer">
+			<span  class ="add-btn " (click)="addClothes()">Add</span>
+			
+			<span  class ="add-btn cancel-btn" (click)="Cancel()">Cancel</span>
+       
+    </ng-template>
+</p-dialog>
+<p-dialog header="update Clothes" [(visible)]="displayBasic1" [style]="{width: '50vw'}" [baseZIndex]="10000">
+    
+		
+	<div class="grid">
+		<div class="col-12 lg:col-2">
+			<div class="col-12 md:col-4">
+				
+			</div>
+		</div>
+		<div class="col-12 lg:col-10">
+			<div class="grid formgrid p-fluid">
+			  
+				<div class="field mb-4 col-12">
+					<label for="name" class="font-medium text-900"
+						>name</label
+					>
+					<input [(ngModel)]="clothesToUpdate.name" id="name" type="text" pInputText />
+				</div>
+				<label for="name" class="font-medium text-900"
+							>Description</label
+						>
+				<select class="form-select" aria-label="Default select example" [(ngModel)]="clothesToUpdate.category">
+					
+					<option value="SHIRT">SHIRT</option>
+					<option value="PANTS">PANTS</option>
+					<option value="JACKET">JACKET</option>
+					<option value="SWEATER">SWEATER</option>
+					
+				  </select>
+				<div class="field mb-4 col-12">
+					<label for="userName" class="font-medium text-900"
+						>description</label
+					>
+					<input [(ngModel)]="clothesToUpdate.description" id="description" type="text" pInputText />
+				</div>
+		
+			
+				<div class="field mb-4 col-12">
+					
+					<input type="file" class="file-uploader pull-left" #fileInput (change)="onFileSelected1($event)">
+				</div>
+				<div class="col-12">
+					
+					<p-messages [value]="msgs"></p-messages>
+				</div>
+			</div>
+		</div>
+	</div>
+<ng-template pTemplate="footer">
+		<span  class ="add-btn " (click)="confirmUpdate()">update</span>
+		
+		<span  class ="add-btn cancel-btn" (click)="Cancel()">Cancel</span>
+   
+</ng-template>
+</p-dialog>
+<p-confirmDialog header="Confirmation" key="confirm1" icon="pi pi-exclamation-triangle" message="Are you sure you want to proceed?"
+										 [style]="{width: '350px'}" acceptButtonStyleClass="p-button-text" rejectButtonStyleClass="p-button-text">
+						</p-confirmDialog>
+
+
+						

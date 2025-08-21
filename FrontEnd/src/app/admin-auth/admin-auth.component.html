@@ -1,0 +1,25 @@
+<div class="signin-container">
+    <form [formGroup]="signinForm" (ngSubmit)="sign_in()">
+      <h2 class="title" style="margin-left: 37px;" >Se connecter</h2>
+      <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Nom de l'utilisateur" formControlName="userNamein" [(ngModel)]="username" />
+        <small class="text-danger" *ngIf="signinForm.controls['userNamein']?.invalid && (signinForm.controls['userNamein']?.dirty || signinForm.controls['userNamein']?.touched)">
+          <i *ngIf="signinForm.controls['userNamein']?.errors?.['required']">
+            <span>Please enter your Username</span>
+          </i>
+        </small>
+      </div>
+      <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Mot de passe" formControlName="Passwordin" [(ngModel)]="Password" />
+        <small class="text-danger" *ngIf="signinForm.controls['Passwordin']?.errors?.['required'] && signinForm.controls['Passwordin']?.touched">
+          <i>Please enter your password</i>
+        </small>
+      </div>
+      <button type="submit" class="btn solid" [disabled]="!signinForm.valid">Se connecter</button>
+    </form>
+  </div>
+
+
+  

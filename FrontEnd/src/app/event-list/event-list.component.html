@@ -1,0 +1,42 @@
+<div class="header">
+
+</div>
+<div class="wrapper">
+    <div class="sidebar">
+        <app-sidebare></app-sidebare>
+    </div>
+    <div class="content">
+        <table class="table">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">date</th>
+                    <th scope="col">month</th>
+                    <th scope="col">year</th>
+                    <th scope="col">Action</th>
+                 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let event of events">
+                    <td>{{event.id}}</td>
+                    <td>{{event.title}}</td>
+                    <td>{{event.date}}</td>
+                    <td>{{event.month}}</td>
+                    <td>{{event.year}}</td>
+                    <td><button type="button" class="btn btn-outline-danger" (click)="DeleteEvent(event)">Delete</button>
+
+                    </td>
+                  
+                    
+                  </tr>
+              
+                </tbody>
+              </table>
+        </table>
+    </div>
+    <p-confirmDialog header="Confirmation" key="confirm1" icon="pi pi-exclamation-triangle" message="Are you sure you want to proceed?"
+    [style]="{width: '350px'}" acceptButtonStyleClass="p-button-text" rejectButtonStyleClass="p-button-text">
+</p-confirmDialog>

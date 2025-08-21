@@ -1,0 +1,74 @@
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <div class="container">
+    <div class="wrapper">
+     
+      <header>
+        <p class="current-date">{{ currentDate }}</p>
+        <div class="icons">
+          <span id="prev" (click)="prevNextClick(true)">
+            <fa-icon class="fa-xs" [icon]="faArrowCircleLeft"></fa-icon>
+          </span>
+          <span id="next" (click)="prevNextClick(false)">
+            <fa-icon class="fa-xs" [icon]="faArrowCircleRight"></fa-icon>
+          </span>
+        </div>
+        <button (click)="goToToday()" class="todayb">Aujourd'hui</button>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Dimanche</li>
+          <li>Lundi</li>
+          <li>Mardi</li>
+          <li>Mercredi</li>
+          <li>Jeudi</li>
+          <li>Vendredi</li>
+          <li>Samedi</li>
+        </ul>
+        <ul class="days">
+          <li *ngFor="let day of days; let i = index" 
+          (click)="handleDayClick(day)" 
+          [ngClass]="{ 
+            'has-event': hasEvent(day), 
+            'inactive': !day.currentMonth,
+            'current-date': isCurrentDate(day) 
+          }">
+        <ng-container *ngIf="day.currentMonth">
+          {{ day.day }}
+        </ng-container>
+        <ng-container *ngIf="!day.currentMonth">
+          <span class="less-month">{{ day.day }}</span>
+        </ng-container>
+        <div *ngFor="let event of getEvents(day)" class="event" [style.background-color]="event.color">
+          {{ event.title }}
+        </div>
+      </li>
+      
+        </ul>
+        
+      </div>
+      <div class="popup">
+        <div class="modal fade" id="formModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Créez votre événement</h5>
+                        <!-- Ajouter un bouton de fermeture (X) -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form (submit)="createEvent(eventTitle.value, exampleColorInput.value)">
+                        <label for="eventTitle" class="evtitre">Evennement titre:</label>
+                        <input type="text" id="eventTitle" name="eventTitle" #eventTitle>
+                        <button type="submit" class="bt">Create</button>
+                        <div class="form-inline">
+                            <label for="exampleColorInput" class="form-label">Couleur Evennement :</label>
+                            <input type="color" class="form-control form-control-color" id="exampleColorInput" #exampleColorInput value="#563d7c" title="Choose your color">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

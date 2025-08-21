@@ -1,0 +1,38 @@
+.categories {
+  margin: 20px;
+  font-family: var(--lato);
+}
+
+.categories h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categories li {
+  padding: 10px;
+  margin: 5px 0;
+  background: var(--light);
+  border: 1px solid var(--grey);
+  border-radius: 48px 0 0 48px;
+  display: flex;
+  align-items: center;
+}
+
+.categories li:hover {
+  background: var(--grey);
+  color: var(--blue);
+}
+
+.categories li .icon {
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}

@@ -1,0 +1,89 @@
+  
+    .navbar {
+
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        color: #000;
+        opacity: 0.85;
+        height: 65px;
+        z-index: 12;
+        width: 100%;
+      
+    
+      }
+      
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        align-items: center;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: center;  
+        flex: 1;  
+      }
+      
+      .menu-items {
+        margin-left: 10rem;
+        order: 2;
+        display: flex;
+        align-items: center;
+  
+      }
+      
+      .menu-items li {
+        list-style: none;
+        margin-left: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        
+      }
+      
+      .menu-items a {
+        text-decoration: none;
+        color: #444;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+        
+      }
+      
+      .menu-items a:hover {
+        color: #a71888;
+        transition: color 0.3s ease-in-out;
+        font-weight: bold;
+      }
+  
+      a {
+        margin-bottom: 90px;
+      }
+      
+      .logo  {
+       
+        position: absolute;  
+        left: 1rem;          
+        width: 200px;
+        height: 50px;
+        margin-left: 5rem;
+        
+      }
+      .sign-btn {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        background: linear-gradient(to right, #6B44E0, #a792e7);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        font-size: 0.8rem;
+        margin-bottom: 3rem;
+        transition: 0.3s;
+        margin-right: 5rem;
+        margin-top: 15px;
+      }
+      .sign-btn:hover {
+        background-color: #5b0c59;
+      }
